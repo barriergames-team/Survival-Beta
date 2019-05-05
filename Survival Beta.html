@@ -1,0 +1,2597 @@
+<!doctype html><html><head>
+        <title>Survival Beta</title>
+    <style type="text/css" id="dcoder_stylesheet">body {
+    background-color:lightcyan;
+}
+
+#box {
+    left:0px;
+    width:25px;
+    height:25px;
+    background-color:lightgreen;
+    position:relative;
+    box-shadow:inset 6px 6px 3px green,
+   inset -6px -6px 3px green;
+   z-index:2;
+   border-radius:15%;
+}
+
+#ar {
+    width:280px;
+    height:400px;
+    border:10px black solid;
+    background-color:wheat;
+    border-radius:5%;
+}
+
+button.r {
+    left:180px;
+    width:60px;
+    height:25px;
+    position:fixed;
+    font-size:13px;
+    border-radius:25%;   
+    bottom:35px;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black; 
+    box-shadow:5px 5px 3px inset darkgrey, -5px -5px 3px inset darkgrey;
+    
+}
+
+button.l {
+left:60px;
+width:60px;
+height:25px;
+position:fixed;
+border-radius:25%; 
+bottom:35px;  
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;  
+box-shadow:5px 5px 3px inset darkgrey, -5px -5px 3px inset darkgrey;   
+}
+
+button.u {
+left:120px;
+width:60px;
+height:25px;
+position:fixed; 
+border-radius:25%;
+bottom:60px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;  
+box-shadow:5px 5px 3px inset darkgrey, -5px -5px 3px inset darkgrey;
+}
+button.d {
+left:120px;
+width:60px;
+height:25px;
+position:fixed; 
+border-radius:25%;
+bottom:10px;
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;  
+box-shadow:5px 5px 3px inset darkgrey, -5px -5px 3px inset darkgrey;   
+}
+button {
+    height:25px;
+}
+#coin {
+left:255px;
+top:350px;
+width:25px;
+height:25px;
+background-color:grey;
+position:relative;  
+box-shadow:inset 6px 6px 4px lightgrey, inset -6px -6px 4px lightgrey; 
+z-index:1; 
+border-radius:15%;
+}
+#ti {
+    left:180px;
+    top:3px;
+    position:fixed;
+    width:1000px;
+    color:darkgrey;
+    z-index:3;
+    
+    
+}
+#mi {
+    width:80px;
+    height:30px;
+    color:maroon;
+    display:none;
+    left:110px;
+    top:380px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;
+}
+#set {
+    left:250px;
+    width:50px;
+    height:30px;
+    position:fixed;
+}
+
+#sh {
+left:0px;
+top:325px;
+width:25px;
+height:25px;
+background-color:red;
+position:relative;  
+box-shadow:inset 6px 6px 4px lightgreen, inset -6px -6px 4px lightgreen; 
+z-index:1; 
+border-radius:15%;    
+}
+#sho {
+    display:none;
+}
+
+#back {
+    width:60px;
+    height:30px;
+    border-radius:20%;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black;
+}
+#bal {
+    color:goldenrod;
+}
+#pi {
+    color:maroon;
+}
+
+#k {
+left:18px;
+top:18px;
+width:25px;
+height:25px;
+background-color:cyan;
+position:fixed;  
+box-shadow:inset 6px 6px 5px blue, inset -6px -6px 5px blue; 
+z-index:1; 
+border-radius:15%; 
+visibility:hidden;   
+}
+
+#al {
+
+    position:fixed;
+    top:370px;
+    left:100px;
+    color:red;
+    
+}
+#da {
+    left:230px;
+    top:20px;
+    position:fixed;
+    width:1000px;
+    color:maroon;
+    z-index:3;
+}
+#lada {
+left:48px;
+top:18px;
+width:25px;
+height:25px;
+background-color:indianred;
+position:fixed;  
+box-shadow:
+inset 0px -8px 5px maroon; 
+z-index:1; 
+border-radius:15%; 
+visibility:visible; 
+}
+#cha {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black; 
+}
+#wa {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;     
+}
+#be {
+left:78px;
+top:18px;
+width:25px;
+height:25px;
+background-color:red;
+position:fixed;  
+box-shadow: inset 0px 8px 3px white; 
+z-index:1; 
+border-radius:15%; 
+visibility:visible;     
+}
+#bett {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;     
+}
+#gar {
+left:108px;
+top:18px;
+width:25px;
+height:25px;
+background-color:maroon;
+position:fixed;  
+box-shadow: inset 0px 8px 3px brown,
+inset 0px -8px 3px brown; 
+z-index:1; 
+border-radius:15%; 
+visibility:visible;    
+}
+
+#ta {
+    display:none;
+}
+#babu {
+border-radius:15%;
+height:25px;  
+width:40px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;
+left:260px;
+bottom:20px;
+position:fixed;    
+}
+#fi {
+    width:80px;
+    height:30px;
+    color:maroon;
+    display:block;
+    left:110px;
+    top:350px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;
+}
+#ef {
+    width:120px;
+    height:25px;
+    color:maroon;
+    display:block;
+    left:180px;
+    top:15px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;    
+}
+#pn1 {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;   
+}
+#pn2 {
+    width:120px;
+    height:25px;
+    color:maroon;
+    display:block;
+    left:180px;
+    top:43px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;    
+}
+#gart {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;
+}
+
+#set {
+    font-size:40px;
+    left:255px;
+    bottom:-22px;
+}
+#sett {
+    display:none;
+}
+#de {
+border-radius:15%;
+height:40px;  
+width:120px; 
+left:100px;
+position:fixed;
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;   
+}
+
+#cmen {
+    display:none;
+}
+#cy1 {
+    height:50px;
+    width:50px;
+    font-size:25px;
+    border:2px solid black;
+}
+#cy2 {
+    height:50px;
+    width:50px;
+    font-size:25px;
+    border:2px solid black;
+    position:fixed;
+    right:5px;
+}
+#pa {
+
+    left:0px;
+    bottom:-10px;
+    position:fixed;
+    font-size:30px;
+}
+#paus {
+    display:none;
+}
+#st {
+    position:fixed;
+    font-size:30px;   
+}
+#mst {
+    position:fixed;
+    
+    left:120px;
+    top:100px;
+    background-color:limegreen;
+    border-radius:10%;
+    width:70px;
+    height:40px;
+    opacity:1;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black;  
+    
+}
+#all {
+    display:none;
+}
+#mst2 {
+    position:fixed;
+    
+    left:120px;
+    top:150px;
+    background-color:darkcyan;
+    border-radius:10%;
+    width:70px;
+    height:40px;
+    opacity:1;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black;  
+    
+}
+#mst3 {
+    position:fixed;
+    left:120px;
+    top:200px;
+    background-color:grey;
+    border-radius:10%;
+    width:70px;
+    height:40px;
+    opacity:1;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black;     
+}
+#mst4{
+position:fixed;
+    
+    left:120px;
+    top:150px;
+    background-color:grey;
+    border-radius:10%;
+    width:70px;
+    height:40px;
+    opacity:1;
+    border-right-color:black;
+    border-bottom-color:black;
+    border-top-color:black;
+    border-left-color:black;      
+}
+
+#deh {
+border-radius:15%;
+height:40px;  
+width:120px; 
+left:100px;
+position:fixed;
+color:green;
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;   
+}
+
+
+#pl1 {
+left:48px;
+top:18px;
+width:25px;
+height:25px;
+background-color:lightgreen;
+z-index:100;
+border:1px solid black;
+border-radius:15%;
+position:fixed;
+visibility:visible; 
+display:block;
+}
+
+#pl2 {
+left:78px;
+top:18px;
+width:25px;
+height:25px;
+background-color:lightgreen;   
+z-index:100; 
+position:fixed;
+visibility:visible; 
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+
+#pl3 {
+left:108px;
+top:18px;
+width:25px;
+height:25px;
+background-color:lightgreen;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+#plac {
+    display:none;
+}
+
+#ar2 {
+    width:280px;
+    height:400px;
+    border:10px black solid;
+    background-color:wheat;
+    border-radius:5%;
+}
+#et {
+width:120px;
+    height:25px;
+    color:maroon;
+    display:block;
+    left:180px;
+    top:71px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;        
+}
+#canc {
+    top:350px;
+    left:130px;
+    height:50px;
+    width:50px;
+    font-size:40px;
+    border:2px solid black;    
+    position:fixed;
+    background-color:grey;
+}
+
+#pl4 {
+left:138px;
+top:18px;
+width:25px;
+height:25px;
+background-color:lightgreen;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+#oid {
+left:18px;
+top:393px;
+width:25px;
+height:25px;
+background-color:cyan;
+position:fixed;  
+box-shadow:inset 6px 6px 6px darkgray, inset -6px -6px 6px darkgray;
+z-index:1; 
+border-radius:15%; 
+visibility:visible;   
+}
+
+#no {
+    font-size:10px;
+    position:fixed;
+    top:395px;
+    left:20px;
+}
+#pl5 {
+left:272px;
+top:333px;
+width:25px;
+height:25px;
+background-color:lightgreen;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+#pl6 {
+left:272px;
+top:273px;
+width:25px;
+height:25px;
+background-color:lightgreen;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+#pf1 {
+left:18px;
+top:18px;
+width:25px;
+height:25px;
+background-color:lightblue;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+
+#pf2 {
+left:272px;
+top:392px;
+width:25px;
+height:25px;
+background-color:lightblue;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+#pf3 {
+left:18px;
+top:392px;
+width:25px;
+height:25px;
+background-color:lightblue;   
+position:fixed;
+z-index:100;   
+visibility:visible;   
+display:block;
+border:1px solid black;
+border-radius:15%;
+}
+#ws {
+    left:0px;
+    top:18px;
+    width:25px;
+    height:25px;
+    background-color:maroon;
+    position:fixed;
+    box-shadow:inset 6px 6px 3px brown,
+    inset -6px -6px 3px brown;
+    border-radius:15%;    
+}
+#wshop {
+    display:none;
+}
+
+#wsb {
+border-radius:15%;
+height:40px;  
+width:120px; 
+border-right-color:black;
+border-bottom-color:black;
+border-top-color:black;
+border-left-color:black;
+}
+
+
+#fost {
+    left:78px;
+    top:18px;
+    width:25px;
+    height:25px;
+    background-color:darkgreen;
+    position:fixed;
+    box-shadow:inset 3px 3px 3px green,
+    inset -3px -3px 3px green;
+    border-radius:50%; 
+       
+}
+
+#cutw {
+    width:80px;
+    height:30px;
+    color:maroon;
+    display:block;
+    left:110px;
+    top:320px;
+    border-radius:10%;
+    border-right-color:darkgrey;
+    border-bottom-color:darkgrey;
+    border-left-color:grey;
+    border-top-color:grey;
+    position:fixed;
+    z-index:5;
+}</style></head>
+    <body>
+    <span id="all"> 
+    <h3 id="ti">Night in: 60s</h3>
+    <h4 id="da">1. Day</h4>
+    <div id="ar"> 
+    <div id="box"></div>
+    <div id="coin"></div>
+    <div id="sh"></div>
+    <div id="k"></div>
+    <div id="lada"></div>
+    <div id="be"></div>
+    <div id="gar"></div>
+    <div id="oid"></div>
+    <div id="ws"></div>
+    <div id="fost"></div>
+    <small id="no">Next<br> in 20s</small>
+   
+    <br><br><br><br><br><br><br><br><br><br><br>
+        <span><p id="al">You are thirsty!</p></span>
+    <br><br><br><br>
+    <span id="plus"></span>
+    <button id="babu" onclick="bag()">Bag</button>
+ <!--   <p id="set" onclick="oset()">⚙️</p> -->
+ 
+    <p id="pa" onclick="pau()">⏸</p>
+    <button id="fi" onclick="fib()">Fishing</button>
+    <button id="cutw" onclick="gew()">Cutting</button>
+        <button onclick="mo()" id="mi">Mine</button>
+    <br><br><br>
+    
+    <button class="u" ontouchstart="up()" ontouchend="clearMove()" id="u"> </button> 
+    <br>
+    <button onmousedown="right()" onmouseup="clearMove()" ontouchstart="right()" ontouchend="clearMove()" class="r" id="r"> </button> 
+    <button ontouchstart="left()" ontouchend="clearMove()" class="l" id="l"> </button>
+    <br>
+    <button ontouchstart="down()" ontouchend="clearMove()" class="d" id="d"> </button>
+
+    
+        
+    </div>
+    </span>
+    <span id="sho">
+    <button id="back" onclick="ba()">Back</button>
+    <br>
+    <h3 id="bal">Balance:</h3>
+    <h3 id="pi">Pickaxe:</h3>
+    <span><ins><h3>Objects:</h3></ins></span>
+    <button onclick="bch()" id="cha">Chest (250$)</button>
+    <br><br>
+    <button onclick="bb()" id="bett">Bed (250$)</button>
+    <br><br>
+    <button id="gart" onclick="bug()">Garden (50$)</button>
+    <br><br>
+    <button id="wsb" onclick="bwsh()">Workshop (250$)</button>
+    
+    <span><ins><h3>Nutrients:</h3></ins></span>
+        <button id="wa" onclick="bw()">Water (100$)</button>
+        <br><br>
+        <button id="wa" onclick="bfo()">Food (100$)</button>
+        <br><br>
+        <button id="pn1" onclick="bus()">
+        Seed (1$)
+        </button>
+        <button onclick="pls()" id="pn1">Plant (1 Seed)</button>
+  <span><ins><h3>Items:</h3></ins></span> 
+  <button id="wa" onclick="bufr()">Fishing Rod (25$)</button>     
+        
+        
+        
+    </span>
+    <span id="ta">
+      <button id="back" onclick="ba2()">Back</button> 
+      <hr> 
+      <h3>
+          Stats:
+      </h3>
+        
+    <h4 id="inf">
+    
+          
+    </h4>
+    
+    <hr>
+    <h3>
+     Objects:   
+    </h3>
+    
+        <h4 id="fur">
+            
+        </h4>
+    
+     <hr> 
+     <h3>
+      Items:   
+     </h3>
+     
+         <h4 id="it">
+         
+             
+         </h4>
+         <hr>
+         <h3>
+             Materials:
+         </h3>
+         <h4 id="orid">
+             
+         </h4>
+         
+         
+     
+      <button id="ef" onclick="eatf()">Eat (Fish)</button>
+      <button id="pn2" onclick="pls()">Plant (Seed)</button>
+      <button id="et" onclick="eatt()">Eat (Tomato)</button>
+     <hr>
+    </span>
+    
+
+
+
+
+
+    
+    <span id="sett">
+    <button id="back" onclick="ba3()">
+        Back
+    </button>
+    <hr>
+    <br>
+    <button id="de" onclick="cord()">
+        Developer Mode
+    </button>
+    <br><br><br>
+     <button id="de" onclick="cme()">Customize Controls</button>
+     <br><br><br>
+     <button id="deh" onclick="smove()">Smooth Move: ON</button>
+<br><br><br>
+<button id="de" onclick="bw()">Build View</button>
+
+</span>
+
+
+
+
+
+    
+    
+    
+    <span id="cmen">
+    <button id="back" onclick="ba4()">Back</button>
+    <button id="back" onclick="cust()">💾</button> <button id="back" onclick="def()">Default</button>
+    <hr><br>
+    <button id="cy1" onclick="cup()">⬆️</button>
+    <button id="cy2" onclick="sip()">➕</button>
+    <br><br>
+    <button id="cy1" onclick="cdown()">⬇️</button> <button id="cy2" onclick="simi()">➖</button>
+        <button class="u" id="u1">Up</button> 
+    <br>
+    <button class="r" id="r1">Right</button> 
+    <button class="l" id="l1">Left</button>
+      <button class="d" id="d1">Down</button>
+
+    </span>
+    <span id="paus">
+    <i><h2 align="center">Game paused</h2></i>
+    <hr>
+    
+  <button onclick="sta()" id="mst">Start</button>
+   <button onclick="mame()" id="mst2">Menu</button>
+   <button id="mst3" onclick="oset()">Settings</button>
+        
+    </span>
+    <span id="mai">
+   <ins>  <strong><h1 align="center">Survival</h1></strong></ins>
+    <button onclick="sta()" id="mst">Start</button>
+    <button id="mst4" onclick="oset()">Settings</button>
+   
+        
+    </span>
+    
+    
+    <span id="plac">
+    <div id="pl1" onclick="pla1()"></div>
+     <div id="pl2" onclick="pla2()"></div>
+     <div id="pl3" onclick="pla3()"></div>
+     <div id="pl4" onclick="pla4()"></div>
+     <div id="pl5" onclick="pla5()"></div>
+     <div id="pl6" onclick="pla6()"></div>
+     <div id="pf1" onclick="pf()"></div>
+     <div id="pf2" onclick="pf()"></div>
+     <div id="pf3" onclick="pf()"></div>
+     <div id="ar2"></div>
+     <div id="canc" onclick="cance()">❌</div>
+     
+        
+    </span>
+    
+    <span id="wshop">
+    <button id="back" onclick="ba3()">Back</button>
+    <hr>
+    <br>
+
+        
+    </span>
+        
+    
+<script type="text/javascript" id="dcoder_script">var p = document.getElementById("box")
+var cus = document.getElementById("u")
+
+var se = 1
+
+var uy = 60
+var dy = 10
+var lry = 35
+
+var wi = 60 
+var he = 25
+var si = 13
+
+var smov = 1
+var movy = 0
+var y = "" 
+var pxl = 0
+var x = ""
+var pyt = 0
+var cp = 1
+var way = ""
+var mi = 1
+var tm = 0
+var time = 60
+var l = 0
+var c = 0
+var upc = 1
+var t = 100
+var day = 1
+var ch = 0
+var cc = 0
+var sl = 0
+var f = 100
+var ga = 0
+var s = 0
+var gs = 0
+var sp = 0
+var as = 0
+var fr = 0
+var fp = 100
+var fin = 0
+var chan = 0
+var os = 0
+var xd = Math.floor(Math.random()*20+15)
+var mov = 0
+var p1 = 0
+var p2 = 0
+var p3 = 0
+var b1 = 60
+var b2 = 0
+var g1 = 90
+var g2 = 0
+var c1 = 30
+var c2 = 0
+var sel = 0
+var tom = 0
+var p4 = 0
+var p5 = 0
+var p6 = 0
+var p7 = 0
+var o = 0
+var ores = ["coal","coal","coal","coal","iron","iron","iron","gold","gold","diamond"]
+var otyr = Math.floor(Math.random()*10)
+var oty = ores[otyr]
+var c = 0
+var i = 0
+var g = 0
+var d = 0
+var wo = 0
+var w1 = 0
+var w2 = 0
+var wood = 0
+var ax = 0
+var ah = 10
+
+/*var posx = Math.floor(Math.random()*250+1)
+var posy = Math.floor(Math.random()*340+30)
+var xid = posx+18+"px"
+var yid = posy+18+"px"
+*/
+
+function right() {
+if (smov==1){
+    if(pxl<=255) {
+        mov = 5
+    }
+    else {
+        mov = 0
+    }
+    }
+    else {
+        pxl += 5
+    }
+}
+
+function left() {
+if (smov==1){
+    if (pxl>0) {
+        mov = -5
+    }
+    else {
+        mov = 0
+    }
+    }
+    else {
+        pxl -= 10
+    }
+}
+
+function clearMove() {
+    mov = 0
+    movy = 0
+}
+
+
+function movex() {
+
+    pxl += mov
+    
+    x = pxl+"px"
+document.getElementById("box").style.left = x;}
+
+function checkx1(){
+    if (pxl>255){
+        pxl = 255
+        mov = 0
+        
+    }
+}
+function checkx2(){
+    if (pxl<0){
+        pxl = 0
+        mov = 0
+    }
+}
+function movex() {
+//if (pxl<250){
+    pxl += mov
+    
+    x = pxl+"px"
+document.getElementById("box").style.left = x;}
+//}
+
+function down() {
+if (smov==1){
+if (pyt<=370) {
+    movy = 5
+}
+}
+else {
+    pyt += 10
+}
+}
+
+function up() {
+if (smov==1){
+    if (pyt>=0) {
+        movy = -5
+    }
+}
+else {
+    pyt -= 10
+}
+}
+function movey() {
+pyt += movy
+    
+    y = pyt+"px"
+document.getElementById("box").style.top = y   
+}
+
+function checky2() {
+    if (pyt<0){
+        pyt = 0
+        movy = 0
+    }
+}
+function checky1() {
+    if (pyt>375){
+        pyt=375
+        movy=0
+    }
+}
+setInterval(checky2,0)
+setInterval(checky1,0)
+setInterval(movey,40)
+setInterval(checkx2,0)
+setInterval(checkx1,0)
+setInterval(movex,40)
+
+
+
+
+function mo() {
+    c += upc
+}
+
+
+function bag() {
+ax += 1
+   document.getElementById("all").style.display = "none"
+document.getElementById("ta").style.display = "block"
+
+document.getElementById("inf").innerHTML = "Balance: "+c+"<br />Water: "+t+"% <br />Food: "+f+"% <br />Day: "+day
+
+document.getElementById("fur").innerHTML = "Chest: "+ch+" ("+cc+"$)"+"<br />Bed: "+sl+"<br />Garden: "+ga
+
+document.getElementById("it").innerHTML = "Fishes: "+fin+"<br />Seeds: "+s+"<br />Fishing Rod(s): "+fr+"<br /> Tomatoes:"+tom+"<br />Axe: "+ax
+
+document.getElementById("orid").innerHTML = "Coal: "+c+"<br />Iron: "+i+"<br />Gold: "+g+"<br />Diamond: "+d+"<br />Wood: "+wood
+
+}
+var scode = "#A9J5B1"
+function cord() {
+var qu = prompt("Type in your developer code!")
+if (qu==scode) {
+    alert ("X: "+pxl+"\nY: "+pyt+"\nTime: "+tm+"\nMine: "+mi+"\nCoins: "+c+"\nThirst: "+t+"\nDay: "+day+"\nFood: "+f+"\nAlready Growing S: "+as+"\nGrown-up S: "+gs+"\nS percent: "+sp+"%\nSeeds: "+s+"\nFishingrod: "+fr+"\nF percent: "+fp+"%")
+/*    ch = 1
+    sl = 1
+    ga = 1
+    as = 1
+    s += 1
+    fr = 1 */
+    c += 1000
+}
+
+else if (qu==false || qu!=scode) {
+    alert("Invalid input!")
+}
+    
+    
+    
+}
+
+/*function right() {
+if (pxl<=250){
+pxl += 15
+way = "x"
+}
+}
+
+function left() {
+    if (pxl>=10) {
+    pxl -= 15 
+    way = "x"  
+    }
+}
+
+*/
+function checkx() {
+x = pxl+"px"
+document.getElementById("box").style.left = x;
+
+}
+
+function checky() {
+    y = pyt+"px"
+    document.getElementById("box").style.top = y;
+}
+/*
+
+function up() {
+if (pyt>=10) {
+    pyt -= 15
+    way = "y"
+}    
+}
+function down() {
+    if (pyt<=370) {
+        pyt += 15
+        way = "y"
+    }
+}
+*/
+
+
+
+function co() {
+if (mi==1) {
+    if (pxl==255 && pyt==375) {
+        pxl -= 30
+        
+        
+        document.getElementById("ar").style.backgroundColor = "grey"
+document.getElementById("coin").style.backgroundColor = "yellow"
+
+document.getElementById("coin").style.textShadow = "inset 6px 6px 4px orange, inset -6px -6px 4px orange"
+
+document.getElementById("mi").style.display = "block"
+
+document.getElementById("sh").style.visibility = "hidden"
+document.getElementById("k").style.visibility = "visible"
+document.getElementById("lada").style.visibility = "hidden"
+document.getElementById("be").style.visibility = "hidden"
+document.getElementById("gar").style.visibility = "hidden"        
+        mi = 2
+        mov = 0
+        movy = 0
+    }  
+ 
+}
+else if (mi==2) {
+if (pxl==255 && pyt==375) {
+        pxl -= 30
+        
+        
+        document.getElementById("ar").style.backgroundColor = "wheat"
+document.getElementById("coin").style.backgroundColor = "darkgrey"
+document.getElementById("coin").style.textShadow = "inset 6px 6px 4px grey, inset -6px -6px 4px grey"
+document.getElementById("mi").style.display = "none"
+document.getElementById("sh").style.visibility = "visible"
+document.getElementById("k").style.visibility = "hidden"
+
+if (ch==1){
+document.getElementById("lada").style.visibility = "visible"}
+
+if (sl==1){
+document.getElementById("be").style.visibility = "visible"}
+
+if (ga==1){
+document.getElementById("gar").style.visibility = "visible"}
+        
+        mi = 1  
+        mov = 0
+        movy = 0  
+}
+
+}
+}
+
+function checkt() {
+if (se==0) {
+    if (tm==0) {
+        if (time>0) {
+            time -= 1
+document.getElementById("ti").style.color = "darkgrey"
+            document.getElementById("ti").innerHTML = "Night in: "+time+"s"
+            
+        }
+        else {
+        tm = 1
+        time = 30
+        t -= 10 
+        document.body.style.backgroundColor = "grey"  
+        }
+        
+    }
+    else if (tm==1) {
+        if (time>0) {
+            time -= 1
+document.getElementById("ti").style.color = "goldenrod" 
+           document.getElementById("ti").innerHTML = "Light in: "+time+"s"
+            
+        }
+        else {
+        tm = 0
+        time = 60
+        t -= 25
+        f -= 20
+        day += 1
+        sp += 25
+        document.getElementById("da").innerHTML = day+". Day"
+        document.body.style.backgroundColor = "lightcyan"     
+        }
+    }
+    }
+    }
+    
+function die() {
+    if (tm==1 && mi==2 && l==0) {
+        alert ("You died in the dark!")
+        mi = 1
+        tm = 0
+        time = 60
+        pxl = 0
+        pyt = 0
+        c = c/2
+        c = Math.round(c)
+        t = 100
+        f = 100
+        day = 0
+document.getElementById("mi").style.display = "none"        
+
+document.getElementById("sh").style.dis
+play = "block"        
+
+document.getElementById("ar").style.bac
+kgroundColor = "wheat"
+
+document.getElementById("coin").style.b
+ackgroundColor = "darkgrey"
+
+document.getElementById("ar").style.backgroundColor = "wheat"
+
+document.getElementById("coin").style.backgroundColor = "darkgrey"
+
+document.getElementById("sh").style.visibility = "visible"
+
+document.body.style.backgroundColor = "lightcyan"
+
+document.getElementById("k").style.visibility = "hidden"
+
+if (ch==1){
+document.getElementById("lada").style.visibility = "visible"}
+
+if (sl==1){
+document.getElementById("be").style.visibility = "visible"}
+
+if (ga==1){
+document.getElementById("gar").style.visibility = "visible"}
+
+    }
+}
+
+function shop() {
+    if (mi==1) {
+        if (pxl==0 && pyt==375) {
+         document.getElementById("all").style.display = "none" 
+
+document.getElementById("sho").style.display = "block" 
+document.getElementById("bal").innerHTML = "Balance: "+c+"$"
+ document.getElementById("pi").innerHTML = "Pickaxe: "+upc+"$/click"        
+        }
+    }
+}
+
+function ba() {
+ document.getElementById("sho").style.display = "none" 
+
+document.getElementById("all").style.display = "block"
+
+document.getElementById("ta").style.display = "none"  
+
+document.getElementById("sett").style.display = "none"
+
+pxl += 30  
+}
+function ba2() {
+ document.getElementById("sho").style.display = "none" 
+
+document.getElementById("all").style.display = "block"
+
+document.getElementById("ta").style.display = "none"  
+  
+}
+
+function ba3() {
+se = 0
+document.getElementById("sho").style.display = "none" 
+
+document.getElementById("all").style.display = "block"
+
+document.getElementById("ta").style.display = "none"  
+
+document.getElementById("sett").style.display = "none"  
+document.getElementById("wshop").style.display = "none"  
+}
+function ba4() {
+var asq = confirm("Do you want to exit without saving?")
+if (asq==true) {
+document.getElementById("sho").style.display = "none" 
+
+document.getElementById("all").style.display = "none"
+
+document.getElementById("ta").style.display = "none"  
+
+document.getElementById("sett").style.display = "block" 
+
+document.getElementById("cmen").style.display = "none"  
+}     
+}
+function tr() {
+    if (mi==2 && pxl==0 && pyt==0) {
+        t = 100
+        pyt += 30
+    }
+}
+
+function ale() {
+    if (t<=35) {
+        document.getElementById("al").style.display = "block"
+    }
+    else {
+     document.getElementById("al").style.display = "none"   
+    }
+    
+}
+
+function diet()  {
+    if (t<=0) {
+        alert("You died, because you didn't trink for a while!")
+        
+        mi = 1
+        tm = 0
+        time = 60
+        pxl = 0
+        pyt = 0
+        c = c/2
+        c = Math.round(c)
+        t = 100
+        f = 100
+        day = 0
+document.getElementById("mi").style.display = "none"        
+
+document.getElementById("sh").style.dis
+play = "block"        
+
+document.getElementById("ar").style.bac
+kgroundColor = "wheat"
+
+document.getElementById("coin").style.b
+ackgroundColor = "darkgrey"
+
+document.body.style.backgroundColor = "lightcyan"
+
+document.getElementById("ar").style.backgroundColor = "wheat"
+
+document.getElementById("coin").style.backgroundColor = "darkgrey"
+
+document.getElementById("sh").style.visibility = "visible"
+
+document.getElementById("k").style.visibility = "hidden"
+
+if (ch==1){
+document.getElementById("lada").style.visibility = "visible"}
+
+if (sl==1){
+document.getElementById("be").style.visibility = "visible"}
+if (ga==1){
+document.getElementById("gar").style.visibility = "visible"}
+    }
+}
+        
+function chest() {
+    if (ch==1) {
+    if (cc==0) {
+    if (pxl==c1 && pyt==c2 && c>0 && mi==1) {
+        alert ("You put all of your Money in the chest! ("+c+"$)")
+        pyt += 30
+        cc = c
+        c = 0
+        mov = 0
+        movy = 0
+    }    
+    }
+    else {
+        if (pxl==c1 && pyt==c2) {
+        alert ("You got your Money back from the chest! ("+cc+"$)")
+        pyt += 30 
+        c = cc+c
+        cc = 0   
+        mov = 0
+        movy = 0
+        }
+    }    
+    }
+}       
+function chv() {
+    if (ch==1 && mi==1) {
+        document.getElementById("lada").style.visibility = "visible"
+    }
+    else {
+        document.getElementById("lada").style.visibility = "hidden"
+    }
+}  
+function bch() {
+    if (ch==0) {
+    if (c>=250) {
+    c -= 250
+    ch = 1
+    pxl += 30
+    document.getElementById("bal").innerHTML = "Balance: "+c  
+    document.getElementById("cha").innerHTML = "Sold"
+    document.getElementById("cha").style.color = "red"  
+
+document.getElementById("all").style.display = "none"
+    
+document.getElementById("sho").style.display = "none"
+
+document.getElementById("plac").style.display = "block"
+
+sel = 1
+
+    
+    }
+    else {
+        alert("You don't have enough money (250$)!")
+    }
+    }
+    else {
+        alert ("It's already purchased!")
+    }
+}  
+
+function bw() {
+    if (t<100){
+    if (c>=100){
+        c -= 100
+        document.getElementById("bal").innerHTML = "Balance: "+c
+        t = 100
+    }    
+    }
+    else {
+        alert ("You aren't thirsty!")
+    }
+}
+
+function sle() {
+if (sl==1) {
+    if (pxl==b1 && pyt==b2 && mi==1) {
+    if (tm==1) {
+        tm = 0
+        time = 60
+        pyt += 30 
+        sp += 25
+        day += 1
+        t -= 25
+        f -= 20
+        mov = 0
+        movy = 0
+        document.getElementById("ti").style.color = "darkgrey"
+            
+            document.getElementById("ti").innerHTML = "Night in: "+time+"s"
+            document.body.style.backgroundColor = "lightcyan"
+            document.getElementById("da").innerHTML = day+". Day"
+    } 
+    else {
+        pyt += 30
+        mov = 0
+        movy = 0
+        alert ("You can't sleep in the light!")
+    }   
+    }
+}   
+}
+function bv() {
+    if (sl==1 && mi==1) {
+        document.getElementById("be").style.visibility = "visible"
+    }
+    else {
+      document.getElementById("be").style.visibility = "hidden"  
+    }
+}
+
+function bb() {
+if (sl==0) {
+    if (c>=250) {
+    c -= 250
+    sl = 1
+    document.getElementById("bal").innerHTML = "Balance: "+c  
+    document.getElementById("bett").innerHTML = "Sold"
+    document.getElementById("bett").style.color = "red"  
+    
+document.getElementById("all").style.display = "none"
+    
+document.getElementById("sho").style.display = "none"
+
+document.getElementById("plac").style.display = "block"
+
+sel = 2
+pxl += 30
+  
+  
+    
+    }
+    else {
+        alert("You don't have enough money (250$)!")
+    }
+    }
+    else {
+        alert ("It's already purchased!")
+    }
+}      
+
+//Garden:
+function pl() {
+    if (ga==1) {
+        if (pxl==g1 && pyt==g2 && mi==1) {
+        mov = 0
+        movy = 0
+        if (gs==1) {
+        
+        alert ("You collected the tomato!") 
+        gs = 0  
+        tom += 1 
+        pyt += 30
+        
+        
+        pyt += 30
+            alert ("You aren't hungry!")
+        
+        }
+        else {
+        if (as==1) {
+        var wat = 4-sp/25
+            alert("You must wait "+wat+" day(s)!")}
+            else {
+                alert("Plant something first!")
+            }
+            pyt += 30
+        }
+        
+        }  
+        }  
+        }    
+
+
+function sep() {
+if (ga==1 && as==1 && gs==0){
+    if (sp==100) {
+        sp = 0
+        alert ("Your seed grown up!")
+        gs = 1
+        as = 0
+    }
+}
+else {
+    sp = 0
+}
+
+}
+function pls() {
+if (ga==1) {
+    if (s>0) {
+    if (as==0 && gs==0) {
+    alert ("You planted a tomato!")
+    s -= 1
+    as = 1    
+    }
+    else {
+        alert ("You already have a growing or growned seed!")
+    }
+    }
+    else {
+        alert ("Buy seed first!")
+    }
+    }
+    else {
+        alert ("Buy a garden first!")
+    }
+}
+function gv() {
+if (ga==1 && mi==1){
+    document.getElementById("gar").style.visibility = "visible"
+}
+else {
+    document.getElementById("gar").style.visibility = "hidden"
+}   
+}
+function dieh() {
+   if (f<=0) {
+   alert("You died, because you didn't eat for a while!")
+        
+        mi = 1
+        tm = 0
+        time = 60
+        pxl = 0
+        pyt = 0
+        c = c/2
+        c = Math.round(c)
+        t = 100
+        f = 100
+        day = 0
+document.getElementById("mi").style.display = "none"        
+
+document.getElementById("sh").style.dis
+play = "block"        
+
+document.getElementById("ar").style.bac
+kgroundColor = "wheat"
+
+document.getElementById("coin").style.b
+ackgroundColor = "darkgrey"
+
+document.body.style.backgroundColor = "lightcyan"
+
+document.getElementById("ar").style.backgroundColor = "wheat"
+
+document.getElementById("coin").style.backgroundColor = "darkgrey"
+
+document.getElementById("sh").style.visibility = "visible"
+
+document.getElementById("k").style.visibility = "hidden"
+
+if (ch==1){
+document.getElementById("lada").style.visibility = "visible"}
+
+if (sl==1){
+document.getElementById("be").style.visibility = "visible"}
+
+if (ga==1){
+document.getElementById("gar").style.visibility = "visible"}    
+   }
+}
+function liveup() {
+    document.getElementById("inf").innerHTML = "Balance: "+c+"<br />Water: "+t+"% <br />Food: "+f+"% <br />Day: "+day
+    
+document.getElementById("it").innerHTML = "Fishes: "+fin+"<br />Seeds: "+s+"<br />Fishing Rod(s): "+fr+"<br />Tomatoes: "+tom+"<br />Axe: "+ax
+
+document.getElementById("orid").innerHTML = "Coal: "+c+"<br />Iron: "+i+"<br />Gold: "+g+"<br />Diamond: "+d+"<br />Wood: "+wood
+}
+function fis() {
+    if (fr>0 && mi==2) {
+        document.getElementById("fi").style.display = "block"
+    }
+    else {
+    document.getElementById("fi").style.display = "none"    
+    }
+}
+function frbr() {
+    if(fr>0) {
+     if(fp<=0) {
+     alert("Your fishing rod is broken! Buy a new!")
+         fr -= 1
+         fp = 100
+     }   
+    }
+    else {
+        fp = 100
+    }
+}
+
+function fib() {
+chan = Math.floor(Math.random()*4+1)
+pxl = 0
+pyt = 30
+if (chan==1) {
+    alert("You catched a fish!")
+    fin += 1
+    fp -= 5
+}
+else {
+    alert("Nothing!")
+    fp -= 5
+    
+}
+}
+function eatf() {
+if (f<100) {
+if (fin>0) {
+    fin -= 1
+    f += 10    
+   
+   document.getElementById("it").innerHTML = "Fishes: "+fin+"<br />Seeds: "+s
+
+ 
+} 
+else {
+    alert("You don't have fish to eat!")
+}   
+}
+else {
+    alert("You aren't hungry!")
+}
+}
+//Garden:
+//as = already growing seed
+//gs = grown-up seed
+//ga = garden true or false
+//sp = growing seed's percent
+
+function checkf() {
+    if (f>100) {
+        f = 100
+    }
+}
+
+function bus() {
+if (ga==1) {
+    if (c>0) {
+        c -= 1
+        s += 1
+        alert("You purchased a seed!")
+    }
+    else {
+        alert("You don't have enough money!")
+    }
+}
+else {
+    alert ("Buy a garden first!")
+}
+}
+function bug() {
+if (ga==0) {
+    if (c>=50) {
+    c -= 50
+    ga = 1
+    document.getElementById("bal").innerHTML = "Balance: "+c  
+    document.getElementById("gart").innerHTML = "Sold"
+    document.getElementById("gart").style.color = "red"  
+    
+    document.getElementById("all").style.display = "none"
+    
+document.getElementById("sho").style.display = "none"
+
+document.getElementById("plac").style.display = "block"
+pxl += 30
+sel = 3
+
+    }
+    else {
+        alert("You don't have enough money (50$)!")
+    }
+    }
+    else {
+        alert ("It's already purchased!")
+    }
+}          
+function bfo() {
+if (f<100){
+    if (c>=100){
+        c -= 100
+        document.getElementById("bal").innerHTML = "Balance: "+c
+        f = 100
+    }    
+    }
+    else {
+        alert ("You aren't hungry!")
+    }
+}    
+function bufr() {
+if (c>=25) {
+c -= 25  
+document.getElementById("bal").innerHTML = "Balance: "+c  
+fr += 1
+alert("You purchased a fishing rod!")
+}
+else {
+    alert("You don't have enough money!")
+}    
+}
+function chaos() {
+if (os==0) {
+    if (day==xd) {
+    alert("Unfortunately you lost your wallet with "+c+"$!") 
+    c = 0
+    os = 1   
+    }
+}   
+}
+function oset() {
+    document.getElementById("sho").style.display = "none" 
+
+document.getElementById("all").style.display = "none"
+
+document.getElementById("ta").style.display = "none"  
+
+document.getElementById("sett").style.display = "block"
+
+document.getElementById("paus").style.display = "none" 
+document.getElementById("mai").style.display = "none" 
+
+
+se = 1
+
+
+}
+
+function cust() {
+
+se = 0  
+  document.getElementById("u").style.bottom = uy+"px"
+document.getElementById("d").style.bottom = dy+"px" 
+document.getElementById("l").style.bottom = lry+"px"
+document.getElementById("r").style.bottom = lry+"px" 
+document.getElementById("cmen").style.display = "none" 
+document.getElementById("all").style.display = "block" 
+
+
+document.getElementById("u").style.width = wi+"px"
+document.getElementById("u").style.height = he+"px"
+document.getElementById("u").style.fontSize = si+"px"
+
+document.getElementById("d").style.width = wi+"px"
+document.getElementById("d").style.height = he+"px"
+document.getElementById("d").style.fontSize = si+"px"
+
+document.getElementById("l").style.width = wi+"px"
+document.getElementById("l").style.height = he+"px"
+document.getElementById("l").style.fontSize = si+"px"
+
+document.getElementById("r").style.width = wi+"px"
+document.getElementById("r").style.height = he+"px"
+document.getElementById("r").style.fontSize = si+"px"
+}
+
+function cme() {
+    document.getElementById("sett").style.display = "none"
+document.getElementById("cmen").style.display = "block"
+}
+function cup(){
+uy += 10  
+dy += 10
+lry += 10  
+document.getElementById("u1").style.bottom = uy+"px"
+document.getElementById("d1").style.bottom = dy+"px" 
+document.getElementById("l1").style.bottom = lry+"px"
+document.getElementById("r1").style.bottom = lry+"px"   
+}
+function cdown() {
+uy -= 10  
+dy -= 10
+lry -= 10  
+document.getElementById("u1").style.bottom = uy+"px"
+document.getElementById("d1").style.bottom = dy+"px" 
+document.getElementById("l1").style.bottom = lry+"px"
+document.getElementById("r1").style.bottom = lry+"px"  
+  
+}
+function sip() {
+    wi += 6
+    he += 6
+    si += 3
+    
+document.getElementById("u1").style.width = wi+"px"
+document.getElementById("u1").style.height = he+"px"
+document.getElementById("u1").style.fontSize = si+"px"
+
+document.getElementById("d1").style.width = wi+"px"
+document.getElementById("d1").style.height = he+"px"
+document.getElementById("d1").style.fontSize = si+"px"
+
+document.getElementById("l1").style.width = wi+"px"
+document.getElementById("l1").style.height = he+"px"
+document.getElementById("l1").style.fontSize = si+"px"
+
+document.getElementById("r1").style.width = wi+"px"
+document.getElementById("r1").style.height = he+"px"
+document.getElementById("r1").style.fontSize = si+"px"
+
+     
+}
+
+function simi() {
+wi -= 6
+he -= 6
+si -= 3 
+document.getElementById("u1").style.width = wi+"px"
+document.getElementById("u1").style.height = he+"px"
+document.getElementById("u1").style.fontSize = si+"px"
+
+document.getElementById("d1").style.width = wi+"px"
+document.getElementById("d1").style.height = he+"px"
+document.getElementById("d1").style.fontSize = si+"px"
+
+document.getElementById("l1").style.width = wi+"px"
+document.getElementById("l1").style.height = he+"px"
+document.getElementById("l1").style.fontSize = si+"px"
+
+document.getElementById("r1").style.width = wi+"px"
+document.getElementById("r1").style.height = he+"px"
+document.getElementById("r1").style.fontSize = si+"px"   
+}
+
+function def() {
+ uy = 60
+ dy = 10
+ lry = 35
+
+ wi = 60 
+ he = 25
+ si = 13   
+
+document.getElementById("u1").style.width = wi+"px"
+document.getElementById("u1").style.height = he+"px"
+document.getElementById("u1").style.fontSize = si+"px"
+
+document.getElementById("d1").style.width = wi+"px"
+document.getElementById("d1").style.height = he+"px"
+document.getElementById("d1").style.fontSize = si+"px"
+
+document.getElementById("l1").style.width = wi+"px"
+document.getElementById("l1").style.height = he+"px"
+document.getElementById("l1").style.fontSize = si+"px"
+
+document.getElementById("r1").style.width = wi+"px"
+document.getElementById("r1").style.height = he+"px"
+document.getElementById("r1").style.fontSize = si+"px"
+
+
+
+document.getElementById("u1").style.bottom = uy+"px"
+document.getElementById("d1").style.bottom = dy+"px" 
+document.getElementById("l1").style.bottom = lry+"px"
+document.getElementById("r1").style.bottom = lry+"px"
+}
+
+function pau() {
+    se = 1
+document.getElementById("all").style.display = "none"
+document.getElementById("paus").style.display = "block"
+}
+
+function sta() {
+se = 0 
+document.getElementById("all").style.display = "block"
+document.getElementById("paus").style.display = "none"  
+document.getElementById("mai").style.display = "none" 
+}
+function mame() {
+document.getElementById("mai").style.display = "block"
+document.getElementById("paus").style.display = "none"  
+document.getElementById("all").style.display = "none"     
+}
+
+
+function smove() {
+    if (smov==0) {
+        smov = 1
+        document.getElementById("deh").innerHTML = "Smooth Move: ON"
+document.getElementById("deh").style.color = "green"
+}
+else {
+    smov = 0
+document.getElementById("deh").innerHTML = "Smooth Move: OFF"
+document.getElementById("deh").style.color = "red"    
+}
+
+}
+
+function pla1() {
+    if (p1==0){
+if (sel != 0){  
+p1 = 1 
+  document.getElementById("pl1").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"
+}
+    if (sel==1){
+    c1 = 30
+    c2 = 0  
+    document.getElementById("lada").style.left = 48+"px" 
+     
+    }
+    else if (sel==2) {
+b1 = 30
+b2 = 0  
+    document.getElementById("be").style.left = 48+"px"         
+    }
+    else if (sel==3) {
+    g1 = 30
+    g2 = 0  
+    document.getElementById("gar").style.left = 48+"px"             
+    }
+    else if (sel==4){
+    w1 = 30
+    w2 = 0  
+    document.getElementById("ws").style.left = 48+"px"       
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+}
+
+function pla2() {
+    if (p2==0){
+if (sel != 0){      
+    p2 = 1 
+    document.getElementById("pl2").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"}
+    if (sel==1){
+    c1 = 60
+    c2 = 0  
+    document.getElementById("lada").style.left = 78+"px" 
+     
+    }
+    else if (sel==2) {
+b1 = 60
+b2 = 0  
+    document.getElementById("be").style.left = 78+"px"                 
+    }
+    else if (sel==3) {
+    g1 = 60
+    g2 = 0  
+    document.getElementById("gar").style.left = 78+"px"    
+    }
+    else if (sel==4){
+    w1 = 60
+    w2 = 0  
+    document.getElementById("ws").style.left = 78+"px"     
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+}
+
+function pla3() {
+    if (p3==0){
+    if (sel != 0){  
+    p3 = 1 
+    document.getElementById("pl3").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"}
+    if (sel==1){
+    c1 = 90
+    c2 = 0  
+    document.getElementById("lada").style.left = 108+"px" 
+     
+    }
+    else if (sel==2) {
+b1 = 90
+b2 = 0  
+    document.getElementById("be").style.left = 108+"px"                 
+    }
+    else if (sel==3) {
+    g1 = 90
+    g2 = 0  
+    document.getElementById("gar").style.left = 108+"px"   
+    }
+    else if (sel==4){
+    w1 = 90
+    w2 = 0  
+    document.getElementById("ws").style.left = 108+"px"      
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+    
+}
+
+function pla4() {
+    if (p4==0){
+    if (sel != 0){  
+  p4 = 1 
+  document.getElementById("pl4").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"}
+    if (sel==1){
+    c1 = 120
+    c2 = 0  
+    document.getElementById("lada").style.left = 138+"px" 
+     
+    }
+    else if (sel==2) {
+b1 = 120
+b2 = 0  
+    document.getElementById("be").style.left = 138+"px"         
+    }
+    else if (sel==3) {
+    g1 = 120
+    g2 = 0  
+    document.getElementById("gar").style.left = 138+"px"             
+    }
+    else if (sel==4){
+    w1 = 120
+    w2 = 0  
+    document.getElementById("ws").style.left = 138+"px"    
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+    
+    
+}
+function pla5() {
+    if (p5==0){
+    if (sel != 0){  
+  p5 = 1 
+  document.getElementById("pl5").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"}
+    if (sel==1){
+    c1 = 255
+    c2 = 315  
+    document.getElementById("lada").style.left = 273+"px" 
+document.getElementById("lada").style.top = 333+"px"     
+    }
+    else if (sel==2) {
+b1 = 255
+b2 = 315
+    document.getElementById("be").style.left = 273+"px"  
+    document.getElementById("be").style.top = 333+"px"            
+    }
+    else if (sel==3) {
+    g1 = 255
+    g2 = 315 
+    document.getElementById("gar").style.left = 273+"px" 
+    document.getElementById("gar").style.top = 333+"px"                 
+    }
+    else if (sel==4){
+    w1 = 255
+    w2 = 315 
+    document.getElementById("ws").style.left = 273+"px" 
+    document.getElementById("ws").style.top = 333+"px"            
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+    
+    
+}
+
+function pla6() {
+    if (p6==0){
+    if (sel != 0){  
+  p6 = 1 
+  document.getElementById("pl6").style.backgroundColor = "red"
+document.getElementById("plac").style.display = "none"
+document.getElementById("all").style.display = "block"}
+    if (sel==1){
+    c1 = 255
+    c2 = 255  
+    document.getElementById("lada").style.left = 273+"px" 
+document.getElementById("lada").style.top = 273+"px"     
+    }
+    else if (sel==2) {
+b1 = 255
+b2 = 255
+    document.getElementById("be").style.left = 273+"px"  
+    document.getElementById("be").style.top = 273+"px"            
+    }
+    else if (sel==3) {
+    g1 = 255
+    g2 = 255 
+    document.getElementById("gar").style.left = 273+"px" 
+    document.getElementById("gar").style.top = 273+"px"                 
+    }
+    else if (sel==4){
+    w1 = 255
+    w2 = 255 
+    document.getElementById("ws").style.left = 273+"px" 
+    document.getElementById("ws").style.top = 273+"px"   
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+       
+    }
+    else {
+        alert("You can't place objects here.")
+    }
+    
+    
+}
+
+
+
+
+function eatt() {
+    if (tom>0) {
+    if (f<100) {
+    tom -= 1
+    f += 50    
+    } 
+    else {
+        alert("You aren't hungry!")
+    }   
+    }
+    else {
+        alert("You don't have enough tomato.")
+    }
+}
+function checkd() {
+    if (t>100) {
+        t = 100
+    }
+}
+
+function cance() {
+if (sel != 0) {
+document.getElementById("sho").style.display = "block"
+}
+document.getElementById("plac").style.display = "none"
+pxl -= 30
+    if (sel==0){
+    document.getElementById("plac").style.display = "none"  
+document.getElementById("sett").style.display = "block"   
+     
+    }
+    else if (sel==1) {
+     
+    document.getElementById("cha").innerHTML = "Chest (250$)"
+    document.getElementById("cha").style.color = "black"
+    document.getElementById("bal").innerHTML = "Balance: "+c  
+    ch = 0
+    c += 250     
+    }
+    else if (sel==2) {
+    
+    document.getElementById("bett").innerHTML = "Bed (250$)"
+    document.getElementById("bett").style.color = "black"
+    document.getElementById("bal").innerHTML = "Balance: "+c 
+    sl = 0
+    c += 250       
+    }
+    else if (sel==3) {
+    
+    document.getElementById("gart").innerHTML = "Garden (50$)"
+    document.getElementById("gart").style.color = "black" 
+    document.getElementById("bal").innerHTML = "Balance: "+c  
+    ga = 0 
+    c += 50    
+    }
+    else if (sel==4){
+    wo = 0
+    c += 250
+    document.getElementById("wsb").style.color = "black"
+document.getElementById("wsb").innerHTML = "Workshop (250$)"     
+    }
+    else if (sel==5){
+        
+    }
+    else if (sel==6){
+        
+    }
+}
+var ovi = 1
+
+function checki() {
+   if (pxl==0 && pyt==375 && mi==2 && ovi==1){
+   mov = 0
+   movy = 0
+   if (oty=="coal") {
+   alert("You collected a coal!")
+   c += 1
+   s = 20
+   pxl += 30
+   otyr = Math.floor(Math.random()*10)
+   oty = ores[otyr]
+
+   }
+   else if (oty=="iron") {
+   alert("You collected an iron!")
+   i += 1
+   s = 20
+   pxl += 30
+   otyr = Math.floor(Math.random()*10)
+   oty = ores[otyr]
+
+   }
+   else if (oty=="gold") {
+   alert("You collected a gold!")
+   g += 1
+   s = 20
+   pxl += 30
+   otyr = Math.floor(Math.random()*10)
+   oty = ores[otyr]
+
+   }
+   else if (oty=="diamond") {
+   alert("You collected a diamond!")
+   d += 1
+   s = 20
+   pxl += 30
+   otyr = Math.floor(Math.random()*10)
+   oty = ores[otyr]
+
+   }
+    
+//posx = Math.floor(Math.random()*250+1) 
+//posy = Math.floor(Math.random()*340+30)
+        
+    }
+}
+
+function ov() {
+document.getElementById("no").innerHTML = "Next<br />in "+s+"s"
+
+if (s>0 && mi==2){
+document.getElementById("no").style.display = "block"    
+}
+else {
+document.getElementById("no").style.display = "none"        
+}
+
+
+//xid = posx+18+"px"
+//yid = posy+18+"px"  
+//document.getElementById("oid").style.left =
+//document.getElementById("oid").style.top = yid  
+if (document.getElementById("oid").style.display == "none") {
+if (oty=="coal"){    
+document.getElementById("oid").style.backgroundColor = "black"
+}
+else if (oty=="iron"){    
+document.getElementById("oid").style.backgroundColor = "white"
+}
+else if (oty=="gold"){    
+document.getElementById("oid").style.backgroundColor = "goldenrod"
+}
+else if (oty=="diamond"){    
+document.getElementById("oid").style.backgroundColor = "cyan"
+}
+}
+
+
+ 
+if (mi==2 && ovi==1) {
+    document.getElementById("oid").style.display = "block"
+}
+else {
+document.getElementById("oid").style.display = "none"    
+}
+}
+var s = 0
+function sov() {
+if (s==0) {
+    ovi = 1
+} 
+else {
+    s -= 1
+    ovi = 0
+    
+    
+}   
+}
+function bw() {
+sel = 0
+document.getElementById("plac").style.display = "block"  
+document.getElementById("sett").style.display = "none"       
+}
+function pf() {
+    alert("It's a fixed object!")
+}
+
+function wshv() {
+    if (wo==1 && mi==1){
+document.getElementById("ws").style.display = "block"       
+    
+    if (pxl==w1 && pyt==w2){
+     document.getElementById("all").style.display = "none" 
+     document.getElementById("wshop").style.display = "block" 
+     pyt += 30  
+     mov = 0
+     movy = 0  
+    }
+        
+    }
+    else {
+     document.getElementById("ws").style.display = "none"   
+    }
+}
+function bwsh() {
+if (wo==0){
+    if (c>250) {
+        sel = 4
+
+wo = 1 
+c -= 250
+pxl += 30 
+document.getElementById("wsb").style.color = "red"
+document.getElementById("wsb").innerHTML = "Sold"   
+document.getElementById("plac").style.display = "block"  
+document.getElementById("sho").style.display = "none"
+ 
+    }
+    else {
+        alert("You don't have enough money!")
+    }
+}
+else {
+    alert("It's already purchased!")
+}
+}
+
+
+function gew() {
+    wood += 1
+    ah -= 1
+}
+
+function axbr() {
+if(ah<1){
+    alert("Your axe broke!")
+    ax -= 1
+    ah = 10
+}    
+}
+
+function cuv() {
+    
+    if (pxl==60 && pyt==0 && mi==2){
+if (ax>0) { 
+document.getElementById("cutw").style.display = "block"
+}
+else {
+        alert("You don't have axe!")
+        pyt += 30
+        mov = 0
+        movy = 0
+        document.getElementById("cutw").style.display = "none"    
+   }
+}
+else {
+    document.getElementById("cutw").style.display = "none"    
+    }    
+}
+
+function fov() {
+    if (mi==2){
+        document.getElementById("fost").style.display = "block"
+    }
+    else {
+     document.getElementById("fost").style.display = "none"   
+    }
+}
+
+setInterval(cuv,0)
+setInterval(axbr,0)
+setInterval(fov,0)
+
+setInterval(wshv,0)
+setInterval(sov,1000)
+setInterval(ov,0)
+setInterval(checki,0)
+//Making a bit harder:
+setInterval(chaos,0)
+//Breaking the fishrod:
+setInterval(frbr,0)
+//Making the fishing button visible:
+setInterval(fis,0)
+//Live upgrade in the bag:
+setInterval(liveup,0)
+//Making the tomato growing:
+setInterval(sep,0)
+//Eating the tomato 🍅:
+setInterval(pl,0)
+//Making visible the objects:
+setInterval(gv,0)
+setInterval(bv,0)
+setInterval(chv,0)
+
+   
+//Chest        
+setInterval(chest,0)
+//Sleep  
+setInterval(sle,0)
+//Making the alert visible:      
+setInterval(ale,0)
+//Drinking:    
+setInterval(tr,0)
+//Shop:
+setInterval(shop,0)
+//Mine:
+setInterval(co,0)
+//Die:
+setInterval(die,0)
+setInterval(diet,0)
+setInterval(dieh,0)
+//Food:
+setInterval(checkf,0)
+//Drink
+setInterval(checkd,0)   
+//Time:
+setInterval(checkt, 1000)
+
+//Y:
+setInterval(checky,0)
+//X:
+setInterval(checkx,0)</script></body></html>
